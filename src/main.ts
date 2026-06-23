@@ -15,6 +15,8 @@ async function bootstrap() {
     )
     .setVersion('1.0')
     .addTag('accounts', 'Criação de contas de usuário')
+    .addTag('sessions', 'Autenticação de usuários')
+    .addBearerAuth()
     .build();
 
   // `cleanupOpenApiDoc` adapta o documento gerado pelos schemas Zod para OpenAPI.

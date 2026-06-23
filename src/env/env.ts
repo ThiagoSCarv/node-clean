@@ -5,6 +5,8 @@ import { z } from 'zod';
 // contém todas as variáveis necessárias e com os tipos corretos.
 export const envSchema = z.object({
   DATABASE_URL: z.url(),
+  JWT_PRIVATE_KEY: z.string(),
+  JWT_PUBLIC_KEY: z.string(),
   PORT: z.coerce.number().default(3333),
 });
 
