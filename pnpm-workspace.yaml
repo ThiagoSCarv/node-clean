@@ -3,3 +3,4 @@ allowBuilds:
   '@scarf/scarf': false
   '@prisma/engines': true
   prisma: true
+  bcrypt: true
