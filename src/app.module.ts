@@ -3,12 +3,13 @@ import { APP_PIPE } from '@nestjs/core';
 import { ZodValidationPipe } from 'nestjs-zod';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
+import { CreateAccountController } from './controllers/create-account.controller';
 import { EnvModule } from './env/env.module';
 import { PrismaModule } from './prisma/prisma.module';
 
 @Module({
   imports: [EnvModule, PrismaModule],
-  controllers: [AppController],
+  controllers: [AppController, CreateAccountController],
   providers: [
     AppService,
     {

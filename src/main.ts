@@ -14,6 +14,7 @@ async function bootstrap() {
       'API de exemplo documentada com Swagger + Zod e renderizada pelo Scalar',
     )
     .setVersion('1.0')
+    .addTag('accounts', 'Criação de contas de usuário')
     .build();
 
   // `cleanupOpenApiDoc` adapta o documento gerado pelos schemas Zod para OpenAPI.
