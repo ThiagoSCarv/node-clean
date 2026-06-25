@@ -14,6 +14,11 @@
     "sourceMap": true,
     "outDir": "./dist",
     "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"],
+      "test/*": ["./test/*"]
+    },
+    "types": ["vitest/globals", "node"],
     "incremental": true,
     "skipLibCheck": true,
     "strict": true,

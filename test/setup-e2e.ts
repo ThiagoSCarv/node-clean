@@ -32,9 +32,12 @@ process.env.DATABASE_URL = databaseURL;
 
 // Adapter do Prisma 7 apontando para o schema único desta suíte (usado apenas
 // para o DROP no teardown; a aplicação tem o seu próprio PrismaService).
-const adapter = new PrismaPg({ connectionString: databaseURL }, {
-  schema: schemaId,
-});
+const adapter = new PrismaPg(
+  { connectionString: databaseURL },
+  {
+    schema: schemaId,
+  },
+);
 const prisma = new PrismaClient({ adapter });
 
 beforeAll(() => {
