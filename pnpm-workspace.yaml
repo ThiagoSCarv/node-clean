@@ -4,3 +4,4 @@ allowBuilds:
   '@prisma/engines': true
   prisma: true
   bcrypt: true
+  '@swc/core': true
